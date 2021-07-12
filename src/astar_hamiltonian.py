@@ -1,7 +1,7 @@
 import game_core
 import astar
 
-class astar_al(game_core.game_core):
+class astar_hamiltonian(game_core.game_core):
     """
     A* based algorithm
     """
@@ -34,4 +34,3 @@ class astar_al(game_core.game_core):
             if self.window is not None:
                 self.window.deadloop()
             exit(1)
-        

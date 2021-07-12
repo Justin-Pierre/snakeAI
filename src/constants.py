@@ -5,7 +5,7 @@ GAME_DIMENSIONS = (NUM_ROW, NUM_COL)
 SNAKE_START = [(15,15),(16,15),(17,15)]
 
 NUM_RUNS = 100
-ALGORITHM_LIST = ["fixed"]
+ALGORITHM_LIST = ["fixed","astar_hamiltonian"]
 
 # Visualizer Settings
 PX_PER_SQUARE = 20
