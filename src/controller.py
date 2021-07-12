@@ -75,7 +75,7 @@ def process_results(overall_results):
             if run[1] is False:
                 fail_count += 1
         dataframe.loc[algorithm] = [numpy.mean(steps_list), numpy.std(steps_list), numpy.amin(steps_list), numpy.quantile(steps_list, 0.25, interpolation='nearest'),
-                                    numpy.median(steps_list), numpy.quantile(steps_list, 0.75, interpolation='nearest'), numpy.amax(steps_list), f"{(fail_count / constants.NUM_RUNS):.2f}%"]
+                                    numpy.median(steps_list), numpy.quantile(steps_list, 0.75, interpolation='nearest'), numpy.amax(steps_list), f"{(fail_count / constants.NUM_RUNS * 100):.2f}%"]
 
         print(dataframe)
 

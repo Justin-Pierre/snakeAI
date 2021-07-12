@@ -61,6 +61,8 @@ class game_core:
                 return
 
         self.apple = (numpy.random.choice(row), numpy.random.choice(col))
+        if self.gameboard[self.apple] == 1:
+            self.new_apple()
 
     def move_snake(self, new_pos):
         if new_pos in self.snake:

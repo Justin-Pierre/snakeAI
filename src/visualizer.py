@@ -20,7 +20,7 @@ class snake_visualizer(tk.Canvas):
     def draw_board(self, snake, apple):
         # Time delay so that we can actually see what's going on
         while time.time() < (self.last_draw_time + constants.VIS_TARGET_STEP_TIME):
-            time.sleep(0.0001)
+            time.sleep(0.005)
 
         self.delete("all")
         
@@ -44,5 +44,5 @@ class snake_visualizer(tk.Canvas):
 
 
 if __name__ == '__main__':
-    print("Run 'runme.py' with -v/--visualizer option.")
+    print("Run 'controller.py' with -v/--visualizer option.")
     exit(1)

@@ -1,7 +1,3 @@
-
-from numpy import empty
-from game_core import game_core
-
 import game_core
 
 class fixed(game_core.game_core):
@@ -33,7 +29,7 @@ class fixed(game_core.game_core):
         if desired_move in valid_moves:
             return desired_move
         else:
-            print("ERROR: Invalid move calculated in basic_hamiltonian_cycle")
+            print("ERROR: Invalid move calculated in 'fixed'")
             if self.window is not None:
                 self.window.deadloop()
             exit(1)
